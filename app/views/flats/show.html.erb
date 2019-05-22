@@ -1,0 +1,42 @@
+<div class="appart">
+  <div id="img_appart" class="sticky-top">
+  </div>
+
+  <div id="appart_global_body">
+    <div class="appart_body">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= @flat.name %></h5>
+          <h6 class="card-subtitle mb-2 text-muted"><%= @flat.address %></h6>
+          <p class="card-text"><%= @flat.description %></p>
+        </div>
+        <img class="card-img-top" src="https://source.unsplash.com/600x300/?map" alt="Card image cap">
+        <%= link_to "Back to list", flats_path, class: "btn btn-secondary" %>
+      </div>
+
+      <div class="card p-3" style="width: 18rem;">
+        <form>
+          <div class="form-group">
+            <h5 class="card-title">Book this place !</h5>
+            <label for="inputFromDate">From</label>
+            <input type="date" class="form-control" id="inputFromDate" aria-describedby="fromDate" placeholder="from:">
+          </div>
+          <div class="form-group">
+            <label for="inputToDate">From</label>
+            <input type="date" class="form-control" id="inputToDate" aria-describedby="toDate" placeholder="to:">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="card-body">
+          <h5 class="card-title">Details</h5>
+          <div class="d-flex justify-content-between">
+            <p class="card-text"><i class="fas fa-user-friends"></i><%= @flat.number_of_guests%></p>
+            <p class="card-text"><i class="fas fa-euro-sign"></i><%= @flat.price_per_night%></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

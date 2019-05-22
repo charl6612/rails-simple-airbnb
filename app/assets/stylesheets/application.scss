@@ -1,0 +1,57 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.container{
+  width: 900px;
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  text-decoration: non
+}
+
+.btn a{
+  color: white;
+}
+
+.flats-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+#card_footer{
+  background-color: white;
+  padding:3px;
+  text-align: center;
+}
+
+#img_appart{
+  height: 300px;
+  background-image: url("https://source.unsplash.com/1000x400/?house");
+  background-size: cover;
+  z-index: 0;
+}
+
+
+.appart_body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#appart_global_body{
+  position: relative;
+  top: -30px;
+}
